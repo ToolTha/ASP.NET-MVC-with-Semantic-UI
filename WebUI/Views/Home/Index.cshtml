@@ -1,31 +1,383 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Homepage Example";
 }
+<div id="home">
+    <div class="ui inverted masthead segment">
+        <div class="ui page grid">
+            <div class="column">
+                <div class="ui inverted blue menu">
+                    <div class="header item">Cat University</div>
+                    <div class="right menu">
+                        <div class="ui mobile dropdown link item">
+                            Menu
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item">Globals</a>
+                                <a class="item">Behaviors</a>
+                                <a class="item">Collections</a>
+                                <a class="item">Elements</a>
+                                <a class="item">Modules</a>
+                                <a class="item">Views</a>
+                            </div>
+                        </div>
+                        <div class="ui dropdown link item">
+                            Globals
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Globals/Reset">Reset</a>
+                                <a class="item" href="~/Globals/Site">Site</a>
+                            </div>
+                        </div>
+                        <div class="ui dropdown link item">
+                            Behaviors
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Behaviors/Api">Api</a>
+                                <a class="item" href="~/Behaviors/Form">Form</a>
+                            </div>
+                        </div>
+                        <div class="ui dropdown link item">
+                            Collections
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Collections/Breadcrumb">Breadcrumb</a>
+                                <a class="item" href="~/Collections/Form">Form</a>
+                                <a class="item" href="~/Collections/Grid">Grid</a>
+                                <a class="item" href="~/Collections/Menu">Menu</a>
+                                <a class="item" href="~/Collections/Message">Message</a>
+                                <a class="item" href="~/Collections/Table">Table</a>
+                            </div>
+                        </div>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+                        <div class="ui dropdown link item">
+                            Elements
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Elements/Button">Button</a>
+                                <a class="item" href="~/Elements/Divider">Divider</a>
+                                <a class="item" href="~/Elements/Flag">Flag</a>
+                                <a class="item" href="~/Elements/Header">Header</a>
+                                <a class="item" href="~/Elements/Icon">Icon</a>
+                                <a class="item" href="~/Elements/Image">Image</a>
+                                <a class="item" href="~/Elements/Input">Input</a>
+                                <a class="item" href="~/Elements/Label">Label</a>
+                                <a class="item" href="~/Elements/List">List</a>
+                                <a class="item" href="~/Elements/Loader">Loader</a>
+                                <a class="item" href="~/Elements/Rail">Rail</a>
+                                <a class="item" href="~/Elements/Reveal">Reveal</a>
+                                <a class="item" href="~/Elements/Segment">Segment</a>
+                                <a class="item" href="~/Elements/Step">Step</a>
+                            </div>
+                        </div>
+
+                        <div class="ui dropdown link item">
+                            Modules
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Modules/Accordion">Accordion</a>
+                                <a class="item" href="~/Modules/Checkbox">Checkbox</a>
+                                <a class="item" href="~/Modules/Dimmer">Dimmer</a>
+                                <a class="item" href="~/Modules/Dropdown">Dropdown</a>
+                                <a class="item" href="~/Modules/Modal">Modal</a>
+                                <a class="item" href="~/Modules/Nag">Nag</a>
+                                <a class="item" href="~/Modules/Popup">Popup</a>
+                                <a class="item" href="~/Modules/Progress">Progress</a>
+                                <a class="item" href="~/Modules/Rating">Rating</a>
+                                <a class="item" href="~/Modules/Search">Search</a>
+                                <a class="item" href="~/Modules/Shape">Shape</a>
+                                <a class="item" href="~/Modules/Sidebar">Sidebar</a>
+                                <a class="item" href="~/Modules/Sticky">Sticky</a>
+                                <a class="item" href="~/Modules/Tab">Tab</a>
+                                <a class="item" href="~/Modules/Transition">Transition</a>
+                                <a class="item" href="~/Modules/Video">Video</a>
+                            </div>
+                        </div>
+
+                        <div class="ui dropdown link item">
+                            Views
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a class="item" href="~/Views/Advertisement">Advertisement</a>
+                                <a class="item" href="~/Views/Card">Card</a>
+                                <a class="item" href="~/Views/Comment">Comment</a>
+                                <a class="item" href="~/Views/Feed">Feed</a>
+                                <a class="item" href="~/Views/Item">Item</a>
+                                <a class="item" href="~/Views/Statistic">Statistic</a>
+                            </div>
+                        </div>
+
+                        <a class="item" href="~/Home/CreateDatabase">Create Database</a>
+                        <a class="item" href="~/Home/DropDatabase">Drop Database</a>
+                    </div>
+                </div>
+                <img src="~/images/cat.png" class="ui medium image">
+                <div class="ui hidden transition information">
+                    <h1 class="ui inverted header">
+                        An Old Cat Can Learn New Tricks
+                    </h1>
+                    <p>At least he won't reach his highest potential unless you enroll him in Cat University's 2013 class.</p>
+                    <div class="large basic inverted animated fade ui button">
+                        <div class="visible content">Come to ICU 2013</div>
+                        <div class="hidden content">Register Now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui vertical feature segment">
+        <div class="ui centered page grid">
+            <div class="fourteen wide column">
+                <div class="ui three column center aligned stackable divided grid">
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="student icon"></i>
+                            Courses
+                        </div>
+                        <p>Take your kitty to a cat-ducation course and learn how to treat her well.</p>
+                        <p>
+                            <a class="ui button" href="#">
+                                Learn
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="code icon"></i>
+                            Library
+                        </div>
+                        <p>Dig through our cat library to found out amazing things you can do with your kitty.</p>
+                        <p>
+                            <a class="ui blue right labeled icon button" href="#">
+                                Research
+                                <i class="right chevron icon"></i>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="ui icon header">
+                            <i class="user icon"></i>
+                            Community
+                        </div>
+                        <p>Get feedback on your cat from a community of loving pet owners on our online bulletin board system.</p>
+                        <p>
+                            <a class="ui button" href="#">
+                                Share
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted vertical segment">
+        <div class="ui very relaxed stackable page grid">
+            <div class="row">
+                <div class="column">
+                    <h1 class="center aligned ui inverted header">
+                        The Best Cat Articles
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ten wide column">
+                    <h3 class="ui inverted header">How to Win Your Cats Attention</h3>
+                    <p>Getting your cat to notice you is a large part of being a pet owner. Although I have a lot of patience for writing things about cats, perhaps this might be enough body copy to make this section of text look filled out.</p>
+                    <p>This and other tips can be found in our newsletter, amazing right?</p>
+                    <div class="ui basic inverted animated button button">
+                        <div class="visible content">Read More</div>
+                        <div class="hidden content"><i class="right arrow icon"></i></div>
+                    </div>
+                    <div class="ui inverted section divider"></div>
+                    <h3 class="ui inverted header">More articles</h3>
+                    <div class="ui inverted animated selection list">
+                        <div class="item">
+                            How to win in a fight with a cat
+                            <div class="right floated">Jan 20, 2023</div>
+                        </div>
+                        <div class="item">
+                            A Supposedly Fun Cat Toy I will Never Buy Again
+                            <div class="right floated">Jan 1, 2023</div>
+                        </div>
+                        <div class="item">
+                            Much ado about yarn
+                            <div class="right floated">Dec 20, 2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <div class="ui form segment">
+                        <h3 class="ui header">Bi-Daily Newsletter</h3>
+                        <p>Sign up and get spammed with cats every day. We have no unsubscribe button!</p>
+                        <div class="field">
+                            <div class="ui left icon action input">
+                                <i class="user icon"></i>
+                                <input name="email" type="text" placeholder="name@email.com">
+                                <div class="ui black submit button">Sign up</div>
+                            </div>
+                        </div>
+                        <div class="ui error message"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui vertical segment">
+        <div class="ui stackable center aligned page grid">
+            <div class="row">
+                <div class="column">
+                    <h1 class="ui header">
+                        Many Companies Rely on Our Cat Knowledge
+                    </h1>
+                    <div class="ui horizontal divider"><i class="heart icon"></i></div>
+                </div>
+            </div>
+            <div class="four column logo row">
+                <div class="column">
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="active side">
+                                <i class="huge github icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge facebook icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge maxcdn icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge pinterest icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge weibo icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge flickr icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="side">
+                                <i class="huge github icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge facebook icon"></i>
+                            </div>
+                            <div class="active side">
+                                <i class="huge maxcdn icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge pinterest icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge weibo icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge flickr icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="side">
+                                <i class="huge github icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge facebook icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge maxcdn icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge pinterest icon"></i>
+                            </div>
+                            <div class="active side">
+                                <i class="huge weibo icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge flickr icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui shape">
+                        <div class="sides">
+                            <div class="side">
+                                <i class="huge github icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge facebook icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge maxcdn icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge pinterest icon"></i>
+                            </div>
+                            <div class="side">
+                                <i class="huge weibo icon"></i>
+                            </div>
+                            <div class="active side">
+                                <i class="huge flickr icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui inverted footer vertical segment">
+        <div class="ui stackable center aligned page grid">
+            <div class="ten wide column">
+                <div class="ui three column center aligned stackable grid">
+                    <div class="column">
+                        <h5 class="ui inverted header">Courses</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">Registration</a>
+                            <a class="item">Course Calendar</a>
+                            <a class="item">Professors</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h5 class="ui inverted header">Library</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">A-Z</a>
+                            <a class="item">Most Popular</a>
+                            <a class="item">Recently Changed</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h5 class="ui inverted header">Community</h5>
+                        <div class="ui inverted link list">
+                            <a class="item">BBS</a>
+                            <a class="item">Careers</a>
+                            <a class="item">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h5 class="ui inverted header">Contact Us</h5>
+                <addr>
+                    237 Catberry Road <br>
+                    Milton Keynes, London <br>
+                </addr>
+                <p>(404) 867-5309</p>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+@section Scripts {
+    <script>
+        head.load(
+            "/dist/homepage.css",
+            "/javascript/homepage.js"
+        );
+    </script>
+}

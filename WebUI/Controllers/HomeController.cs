@@ -16,9 +16,6 @@ namespace WebUI.Controllers
 
         public ActionResult About()
         {
-            ApplicationDbContext db = new ApplicationDbContext();
-            db.Database.Initialize(true);
-
             ViewBag.Message = "Your application description page.";
 
             return View();
@@ -26,9 +23,27 @@ namespace WebUI.Controllers
 
         public ActionResult Contact()
         {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        //Force Create Database
+        public ActionResult CreateDatabase()
+        {
+            Tools.AutoGenView(Server.MapPath("~/"));
+            ApplicationDbContext db = new ApplicationDbContext();
+            db.Database.Initialize(true);
+
+            return View();
+        }
+
+        //Drop Database (Delete Database file)
+        public ActionResult DropDatabase()
+        {
+            Tools.AutoGenView(Server.MapPath("~/"));
             ApplicationDbContext db = new ApplicationDbContext();
             db.Database.Delete();
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }

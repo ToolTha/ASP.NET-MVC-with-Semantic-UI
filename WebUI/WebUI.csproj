@@ -164,12 +164,19 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BehaviorsController.cs" />
+    <Compile Include="Controllers\CollectionsController.cs" />
+    <Compile Include="Controllers\ElementsController.cs" />
+    <Compile Include="Controllers\GlobalsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\ViewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Tools.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -208,6 +215,21 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Behaviors\Api.cshtml" />
+    <Content Include="Views\Behaviors\Form.cshtml" />
+    <Content Include="Views\Collections\Checkbox.cshtml" />
+    <Content Include="Views\Collections\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\Contact.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Home\Index.cshtml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="Views\Modules\Checkbox.cshtml" />
+    <Content Include="Views\Modules\Index.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -219,9 +241,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -242,6 +261,52 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Views\Advertisement.cshtml" />
+    <Content Include="Views\Views\Card.cshtml" />
+    <Content Include="Views\Views\Comment.cshtml" />
+    <Content Include="Views\Views\Feed.cshtml" />
+    <Content Include="Views\Views\Item.cshtml" />
+    <Content Include="Views\Views\Statistic.cshtml" />
+    <Content Include="Views\Modules\Accordion.cshtml" />
+    <Content Include="Views\Modules\Dimmer.cshtml" />
+    <Content Include="Views\Modules\Dropdown.cshtml" />
+    <Content Include="Views\Modules\Modal.cshtml" />
+    <Content Include="Views\Modules\Nag.cshtml" />
+    <Content Include="Views\Modules\Popup.cshtml" />
+    <Content Include="Views\Modules\Progress.cshtml" />
+    <Content Include="Views\Modules\Rating.cshtml" />
+    <Content Include="Views\Modules\Search.cshtml" />
+    <Content Include="Views\Modules\Shape.cshtml" />
+    <Content Include="Views\Modules\Sidebar.cshtml" />
+    <Content Include="Views\Modules\Sticky.cshtml" />
+    <Content Include="Views\Modules\Tab.cshtml" />
+    <Content Include="Views\Modules\Transition.cshtml" />
+    <Content Include="Views\Modules\Video.cshtml" />
+    <Content Include="Views\Home\CreateDatabase.cshtml" />
+    <Content Include="Views\Home\DropDatabase.cshtml" />
+    <Content Include="Views\Globals\Index.cshtml" />
+    <Content Include="Views\Globals\Reset.cshtml" />
+    <Content Include="Views\Globals\Site.cshtml" />
+    <Content Include="Views\Elements\Button.cshtml" />
+    <Content Include="Views\Elements\Divider.cshtml" />
+    <Content Include="Views\Elements\Flag.cshtml" />
+    <Content Include="Views\Elements\Header.cshtml" />
+    <Content Include="Views\Elements\Icon.cshtml" />
+    <Content Include="Views\Elements\Image.cshtml" />
+    <Content Include="Views\Elements\Input.cshtml" />
+    <Content Include="Views\Elements\Label.cshtml" />
+    <Content Include="Views\Elements\List.cshtml" />
+    <Content Include="Views\Elements\Loader.cshtml" />
+    <Content Include="Views\Elements\Rail.cshtml" />
+    <Content Include="Views\Elements\Reveal.cshtml" />
+    <Content Include="Views\Elements\Segment.cshtml" />
+    <Content Include="Views\Elements\Step.cshtml" />
+    <Content Include="Views\Collections\Breadcrumb.cshtml" />
+    <Content Include="Views\Collections\Form.cshtml" />
+    <Content Include="Views\Collections\Grid.cshtml" />
+    <Content Include="Views\Collections\Menu.cshtml" />
+    <Content Include="Views\Collections\Message.cshtml" />
+    <Content Include="Views\Collections\Table.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
